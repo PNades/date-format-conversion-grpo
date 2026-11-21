@@ -9,3 +9,8 @@
 **Reflection:** [What went well, what was challenging, and how failing fast / verification helped.]
 
 Do not fill in training results until the job actually runs.
+### GRPO Training Results
+
+GRPO training was completed on Purdue Scholar using an NVIDIA GPU. The model, EleutherAI/pythia-70m, completed 100 training steps in approximately 31 seconds. The training job finished successfully with exit code 0:0, and the final model and training logs were saved.
+
+The recorded reward remained at 0.0, indicating that the model did not receive positive rewards during training. Although the training pipeline ran successfully, the model's date-conversion accuracy has not yet been verified.

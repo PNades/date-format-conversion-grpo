@@ -50,6 +50,7 @@ def main():
                         per_device_train_batch_size=2, gradient_accumulation_steps=4,
                         num_generations=2, max_completion_length=24,
                         learning_rate=1e-5, logging_steps=1, save_steps=50,
+			bf16=False, fp16=False,
                         report_to='none', remove_unused_columns=False)
     trainer = GRPOTrainer(model=model, args=config, train_dataset=ds,
                           reward_funcs=grpo_reward, processing_class=tokenizer)

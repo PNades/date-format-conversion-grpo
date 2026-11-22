@@ -4,7 +4,7 @@ import re
 
 
 def score(output: str, expected: str) -> float:
-    output = output.strip()
+    output = output.strip().split('\n')[0].strip()
     expected = expected.strip()
     if output == expected:
         return 1.0
